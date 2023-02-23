@@ -1,0 +1,18 @@
+name: Demo
+
+on: push
+
+jobs:
+  hello:
+    name: Hello
+    run-on: ubuntu:20.04
+    steps: 
+      - name: Checkout
+        uses: actions/checkout/v2
+        run: ls
+        shell: bash
+
+    steps:
+      - name: Hello
+        run: echo "Hello World"
+        shell: bash
